@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  msgpackr:
+    hash: ueblqvju6cm2oxcfne57bp5k6i
+    path: patches/msgpackr.patch
+
 importers:
 
   .:
@@ -2145,7 +2150,7 @@ snapshots:
     dependencies:
       effect: 3.14.2
       find-my-way-ts: 0.1.5
-      msgpackr: 1.11.2
+      msgpackr: 1.11.2(patch_hash=ueblqvju6cm2oxcfne57bp5k6i)
       multipasta: 0.2.5
 
   '@emnapi/runtime@1.4.0':
@@ -3108,7 +3113,7 @@ snapshots:
       '@msgpackr-extract/msgpackr-extract-win32-x64': 3.0.3
     optional: true
 
-  msgpackr@1.11.2:
+  msgpackr@1.11.2(patch_hash=ueblqvju6cm2oxcfne57bp5k6i):
     optionalDependencies:
       msgpackr-extract: 3.0.3
 
